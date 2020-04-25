@@ -1,44 +1,5 @@
 #If WinActive("ahk_group " . Vim.GroupName)
 
-; If you disable the keys here,
-; you can use it for SuperMemoVim
-; effectively remapping original shortcuts
-
-
-
-; All Two-key combo
-
-F11:: ; Random jump/pick in a registry or tasklist manager
-+Tab:: ; Move to the previous option or option group
-+F2:: ; Search SuperMemo Wiki Help
-+F3:: ; Search for leeches
-+F4:: ; Import mail from MS Outlook for IR
-+F12:: ; Quick backup
-F3:: ; No search
-^]:: ; increase font size
-^Delete:: ; in the element window, delete the current component
-^F2:: ; Execute the final drill 
-^F3:: ; Search the web for the currently selected phrase
-; ^F5:: ; USING Restore the default windows layout
-^F12:: ; Repair collection
-^o:: ; IMPORTANT: Open Favorite; Remapped to Esc
-!Backspace:: ; Undo text editing (same as Ctrl+Z) 
-!F1:: ; Add a new task
-!F4:: ; Close the program
-!F5:: ; Dock toolbars (e.g. to clear the desktop) 
-!F10:: ; Open the context menu of the currently active window
-!F11:: ; Random test or Resume random test 
-!F12:: ; Open the component menu of the current component 
-!o:: ; Tools : Options
-return
-
-
-^e:: ; delete next word
-^w:: ; delete previous word
-return
-
-
-
 ;;;;;;; Below are all multi-key combo
 ; All Three-key combo
 ; All Ctrl+Shift+Key combo
@@ -360,18 +321,5 @@ if state = D
 return
 } else {
 Send, !X
-return
-}
-
-
-; Ctrl Shift Enter: Remove all elements!!!
-Ctrl & Enter::
-GetKeyState, state, Shift
-if state = D
-{
-Send, {Esc}
-return
-} else {
-Send, ^{Enter}
 return
 }

@@ -19,11 +19,11 @@
 
 class VimAhk{
   __About(){
-    this.About.Version := "v0.1.1"
-    this.About.Date := "05/May/2020"
-    this.About.Author := "MasterHowToLearn"
-    this.About.Description := "Vim emulator with AutoHotkey for SuperMemo."
-    this.About.Homepage := "https://github.com/MasterHowToLearn/SuperMemoVim"
+    this.About.Version := "v0.7.1"
+    this.About.Date := "22/Apr/2020"
+    this.About.Author := "rcmdnk"
+    this.About.Description := "Vim emulation with AutoHotkey, everywhere in Windows."
+    this.About.Homepage := "https://github.com/rcmdnk/vim_ahk"
     this.Info["VimHomepage"] := this.About.Homepage
   }
 
@@ -45,6 +45,7 @@ class VimAhk{
     this.GroupName := "VimGroup" GroupN
 
     DefaultGroup := this.SetDefaultActiveWindows()
+
 
     ; Configuration values for Read/Write ini
     this.Conf := {}
@@ -180,6 +181,7 @@ class VimAhk{
   SetDefaultActiveWindows(){
     DefaultList := ["ahk_exe sm17.exe"  ; Version 17
                   , "ahk_exe sm18.exe"]  ; Version 18
+
 
     DefaultGroup := ""
     For i, v in DefaultList
