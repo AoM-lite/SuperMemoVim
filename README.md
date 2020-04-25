@@ -11,12 +11,12 @@ This is a fork from the original [vim_ahk](https://github.com/rcmdnk/vim_ahk/rel
 ## Installation
 
 Download the zip; unzip it and open vim.ahk to use. Make sure you've installed [AutoHotKey](https://www.autohotkey.com/) first.
+I create a `supermemovim.ahk` shortcut and put it into the Windows Startup folder for convenience.
 
 ## Other Options
 
 | Option                 | Description                                                                                                                                                                            | Default |
 | :--------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------ |
-| VimRestoreIME          | If 1, IME status is restored at entering insert mode.                                                                                                                                  | 1       |
 | VimJJ                  | If 1, `jj` changes mode to Normal from Insert.                                                                                                                                         | 0       |
 | VimLongEscNormal       | If 1, pushing escape sends escape to the underlying application, while holding escape sets normal mode.                                                                                | 0       |
 | VimTwoLetterEsc        | A list of character pairs to press together during insert mode to get to normal mode. For example, a value of `jf` means pressing `j` and `f` at the same time will enter normal mode. |         |
@@ -94,17 +94,14 @@ If using a custom two-letter hotkey to enter normal mode, the two letters must b
 
 ### Move
 
-| Key/Commands  | Function                                                                        |
-| :-----------: | :------------------------------------------------------------------------------ |
-|    h/j/k/l    | Left/Down/Up/Right.                                                             |
-|     0/\$      | To the start/end of the line.                                                   |
-| Ctrl-a/Ctrl-e | To the start/end of the line (emacs like).                                      |
-|       ^       | To the starting non-whitespace character of the line.                           |
-|    w/W/e/E    | Move a word forward (all work the same way: goes to the beginning of the word). |
-|      b/B      | Move a word backward (b/B: the beginning of the word).                          |
-| Ctrl-u/Ctrl-d | Go Up/Down 10 line.                                                             |
-| Ctrl-b/Ctrl-f | PageUp/PageDown.                                                                |
-|     gg/G      | Go to the top/bottom of the file                                                |
+| Key/Commands | Function                                                                        |
+| :----------: | :------------------------------------------------------------------------------ |
+|   h/j/k/l    | Left/Down/Up/Right.                                                             |
+|     0/\$     | To the start/end of the line.                                                   |
+|      ^       | To the starting non-whitespace character of the line.                           |
+|      w       | Move a word forward (all work the same way: goes to the beginning of the word). |
+|      b       | Move a word backward (b: the beginning of the word).                            |
+|     gg/G     | Go to the top/bottom of the file                                                |
 
 In addition, `Repeat` is also available for some commands.
 
@@ -131,37 +128,9 @@ y/d/c+Move Command can be used, too.
 - e.g.) `yw` -> copy next one word.
 - e.g.) `d3w` -> delete next 3 words.
 
-### Others
-
-| Key/Commands | Function                                                                                      |
-| :----------: | :-------------------------------------------------------------------------------------------- |
-|   u/Ctrl-r   | Undo/Redo.                                                                                    |
-|     r/R      | Replace one character/multiple characters.                                                    |
-|      J       | Combine two lines.                                                                            |
-|      .       | It is fixed to do: `Replace a following word with a clipboard` (useful to use with a search). |
-|      ~       | Change case.                                                                                  |
-|      /       | Start search (search box will be opened)                                                      |
-|     n/N      | Search next/previous (Some applications support only next search)                             |
-|      \*      | Search the word under the cursor.                                                             |
-|    ZZ/ZQ     | Save and Quit/Quit.                                                                           |
-
 ## Available commands in Visual Mode
 
-| Key/Commands | Function                                                                 |
-| :----------: | :----------------------------------------------------------------------- |
-|  ESC/Ctrl-[  | Enter Normal Mode.                                                       |
-| Move command | Most of move commands in the Normal Mode are available.                  |
-|   y/d/x/c    | Copy/Cut/Cut/Cut and insert (`d`=`x`)                                    |
-|   Y/D/X/C    | Move to the end of line, then Copy/Cut/Cut/Cut and Insert Mode (`D`=`X`) |
-|      \*      | Search the selected word.                                                |
-
-## Available commands at Command mode
-
-| Key/Commands | Function                     |
-| :----------: | :--------------------------- |
-|  ESC/Ctrl-[  | Enter Normal Mode.           |
-|  w + RETURN  | Save                         |
-|  w + SPACE   | Save as                      |
-|    w + q     | Save and Quit                |
-|      q       | Quit                         |
-|      h       | Open help of the application |
+| Key/Commands | Function                                                |
+| :----------: | :------------------------------------------------------ |
+|  ESC/Ctrl-[  | Enter Normal Mode.                                      |
+| Move command | Most of move commands in the Normal Mode are available. |
