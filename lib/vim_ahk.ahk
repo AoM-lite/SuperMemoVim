@@ -19,10 +19,10 @@
 
 class VimAhk{
   __About(){
-    this.About.Version := "v0.7.1"
-    this.About.Date := "22/Apr/2020"
+    this.About.Version := "v0.1.1"
+    this.About.Date := "05/May/2020"
     this.About.Author := "rcmdnk"
-    this.About.Description := "Vim emulation with AutoHotkey, everywhere in Windows."
+    this.About.Description := "Vim emulation with AutoHotkey for SuperMemo."
     this.About.Homepage := "https://github.com/rcmdnk/vim_ahk"
     this.Info["VimHomepage"] := this.About.Homepage
   }
@@ -45,25 +45,6 @@ class VimAhk{
     this.GroupName := "VimGroup" GroupN
 
     DefaultGroup := this.SetDefaultActiveWindows()
-
-    ; Following application select the line break at Shift + End.
-    GroupAdd, VimLBSelectGroup, ahk_exe POWERPNT.exe ; PowerPoint
-    GroupAdd, VimLBSelectGroup, ahk_exe WINWORD.exe  ; Word
-    GroupAdd, VimLBSelectGroup, ahk_exe wordpad.exe  ; WordPad
-
-    ; OneNote before Windows 10
-    GroupAdd, VimOneNoteGroup, ahk_exe onenote.exe ; OneNote Desktop
-
-    ; Need Home twice
-    GroupAdd, VimDoubleHomeGroup, ahk_exe Code.exe ; Visual Studio Code
-
-    ; Followings can emulate ^. For others, ^ works as same as 0
-    GroupAdd, VimCaretMove, ahk_exe notepad.exe ; NotePad
-
-    ; Followings start cursor from the same place after selection.
-    ; Others start right/left (by cursor) point of the selection
-    GroupAdd, VimCursorSameAfterSelect, ahk_exe notepad.exe ; NotePad
-    GroupAdd, VimCursorSameAfterSelect, ahk_exe explorer.exe ; Explorer
 
     ; Configuration values for Read/Write ini
     this.Conf := {}
@@ -197,20 +178,8 @@ class VimAhk{
   }
 
   SetDefaultActiveWindows(){
-    DefaultList := ["ahk_exe Evernote.exe"  ; Evernote
-                  , "ahk_exe explorer.exe"  ; Explorer
-                  , "ahk_exe notepad.exe"   ; NotePad
-                  , "OneNote"               ; OneNote at Windows 10
-                  , "ahk_exe onenote.exe"   ; OneNote Desktop
-                  , "ahk_exe POWERPNT.exe"  ; PowerPoint
-                  , "ahk_exe TeraPad.exe"   ; TeraPad
-                  , "ahk_exe texstudio.exe" ; TexStudio
-                  , "ahk_exe texworks.exe"  ; TexWork
-                  , "Write:"                ; Thunderbird, English
-                  , "作成"                  ; Thunderbird, 日本語
-                  , "ahk_exe Code.exe"      ; Visual Studio Code
-                  , "ahk_exe WINWORD.exe"   ; Word
-                  , "ahk_exe wordpad.exe"]  ; WordPad
+    DefaultList := ["ahk_exe sm17.exe"  ; Version 17
+                  , "ahk_exe sm18.exe"]  ; Version 18
 
     DefaultGroup := ""
     For i, v in DefaultList
