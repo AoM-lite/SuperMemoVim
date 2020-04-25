@@ -2,7 +2,7 @@
 
 ## WORK IN PROGRESS PLEASE DON'T USE YET
 
-![https://raw.githubusercontent.com/MasterHowToLearn/SuperMemoVim/master/images/supermemovim.png]
+![logo](https://raw.githubusercontent.com/MasterHowToLearn/SuperMemoVim/master/images/supermemovim.png "logo")
 
 vim emulation for vim-like controls in SuperMemo.
 
