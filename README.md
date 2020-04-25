@@ -1,10 +1,12 @@
 # SuperMemoVim: Learning at the Speed of Editing By Editing at the Speed of Thought
 
-## WORK IN PROGRESS PLEASE DON'T USE
+## WORK IN PROGRESS PLEASE DON'T USE YET
+
+![../images/supermemovim.png]
+
+vim emulation for vim-like controls in SuperMemo.
 
 This is a fork from the original [vim_ahk](https://github.com/rcmdnk/vim_ahk/releases). All credits go to the original developer. For details please visit the original repo.
-
-This is a vim emulation for vim-like controls in SuperMemo.
 
 ## Installation
 
