@@ -21,9 +21,9 @@ class VimAhk{
   __About(){
     this.About.Version := "v0.1.1"
     this.About.Date := "05/May/2020"
-    this.About.Author := "rcmdnk"
-    this.About.Description := "Vim emulation with AutoHotkey for SuperMemo."
-    this.About.Homepage := "https://github.com/rcmdnk/vim_ahk"
+    this.About.Author := "MasterHowToLearn"
+    this.About.Description := "Vim emulator with AutoHotkey for SuperMemo."
+    this.About.Homepage := "https://github.com/MasterHowToLearn/SuperMemoVim"
     this.Info["VimHomepage"] := this.About.Homepage
   }
 
@@ -54,7 +54,7 @@ class VimAhk{
     this.AddToConf("VimLongEscNormal", 0, 0
       , "Long press esc to enter normal mode:"
       , "Hold esc to enter normal, allowing single press to send esc to window")
-    this.AddToConf("VimJJ", 0, 0
+    this.AddToConf("VimJJ", 1, 1
       , "JJ enters Normal mode:"
       , "Assign JJ enters Normal mode.")
     this.AddToConf("VimTwoLetter", "", ""

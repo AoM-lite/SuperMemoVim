@@ -1,3 +1,4 @@
+#Include %A_LineFile%\..\bind\disableDangerousCombo.ahk
 #Include %A_LineFile%\..\bind\vim_enter_normal.ahk
 #Include %A_LineFile%\..\bind\vim_enter_insert.ahk
 #Include %A_LineFile%\..\bind\vim_repeat.ahk
