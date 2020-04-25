@@ -2,52 +2,13 @@
 
 # WORK IN PROGRESS
 
-This is a fork from the original [vim_ahk](https://github.com/rcmdnk/vim_ahk/releases). All credits go to the original developer.
+This is a fork from the original [vim_ahk](https://github.com/rcmdnk/vim_ahk/releases). All credits go to the original developer. For details please visit the original repo.
 
 This is a vim emulation for vim-like controls in SuperMemo.
 
 ## Installation
 
 Download the zip; unzip it and open vim.ahk to use. Make sure you've installed [AutoHotKey](https://www.autohotkey.com/) first.
-
-## Executable
-
-You can change them from the right click menu of task tray icon (find `VimMenu`-`Settings` in the list),
-or launch the setting window by `Ctrl-Alt-Shift-v`.
-
-If you want to change applications directly in the script, add `VimGroup` variable before `Vim := new VimAhk()` in vim.ahk (Window title/class can be checked by Window spy of AutoHotkey),
-or write before including vim.ahk
-
-Example line:
-
-    VimGroup := "ahk_exe chrome.exe,ahk_exe firefox.exe"
-
-Multiple applications can be written by comma separated.
-
-Note: This will overwrite the default applications. If you want to **add** these applications to the default applications, add following applications after your applications:
-
-    "ahk_exe notepad.exe,ahk_exe explorer.exe,ahk_exe wordpad.exe,ahk_exe TeraPad.exe,作成,Write:,ahk_exe POWERPNT.exe,ahk_exe WINWORD.exe,ahk_exe Evernote.exe,ahk_exe Code.exe,ahk_exe onenote.exe,OneNote,ahk_exe texworks.exe,ahk_exe texstudio.exe"
-
-Or you can use GUI option setting described below.
-
-The default setting of `VimSetTitleMatchMode` is 2, which makes matching methods as `Contain`.
-
-Window spy will give you about Window Title, Class and Process like:
-
-    User's Notebook - OneNote
-    ahk_class ApplicationFrameWindow
-    ahk_exe ApplicationFrameHost.exe
-
-If you add any of above lines to VimGroup, vim_ahk works on OneNote.
-But if you set `ahk_class ApplicationFrameWindow` or `ahk_exe ApplicationFrameHost.exe`,
-vim_ahk also works on other applications which use these Class/Process name (most of applications installed from Microsoft Store).
-
-Examples of applications:
-
-- Chrome: `ahk_exe chrome.exe`
-- Firefox: `ahk_exe firefox.exe`
-- Excel: `ahk_exe EXCEL.EXE`
-- LibreOffice: `ahk_exe soffice.bin` (for all LibreOffice applications)
 
 ## Other Options
 
@@ -84,21 +45,6 @@ Disable level:
 - 1: Do not disable unused keys
 - 2: Disable alphabets (+shift) and symbols
 - 3: Disable all including keys with modifiers (e.g. Ctrl+Z)
-
-## GUI Option Setting Window
-
-You can change these options from the right click menu of task tray icon (find `VimMenu`-`Settings` in the list),
-or launch the setting window by `Ctrl-Alt-Shift-v`.
-
-![traymenu](https://raw.githubusercontent.com/rcmdnk/vim_ahk/master/pictures/traymenu.jpg "traymenu")
-
-![settings](https://raw.githubusercontent.com/rcmdnk/vim_ahk/master/pictures/settings.jpg "settings")
-
-Here, you can add \*\*
-
-If `Icon` is enabled, the task tray icon is changed following the mode.
-
-![trayicon](https://raw.githubusercontent.com/rcmdnk/vim_ahk/master/pictures/trayicon.gif "trayicon")
 
 ## Main Modes
 
