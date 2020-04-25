@@ -21,16 +21,16 @@ Send, ^{BS}
 Return
 
 
-
-; This is a non-standard Vim binding for deleting the next word
+; This is a non-standard Vim binding
+; for deleting the next word while in Insert Mode
 #If WinActive("ahk_group " . Vim.GroupName) and (Vim.State.StrIsInCurrentVimMode("Insert"))
 ^e::
 Send, ^{Del}
-Return
+return
 
 #If WinActive("ahk_group " . Vim.GroupName) and (Vim.State.Mode == "Vim_Normal")
 ^e::
-Return
+return
 
 
 ; Go to previous visited item
@@ -44,6 +44,9 @@ return
 !l::
 Send, !{Right}
 return
+
+
+; `asdfg` mapped for grading
 
 If WinActive("ahk_group " . Vim.GroupName) and (Vim.State.Mode == "Vim_Normal")
 a::
@@ -87,12 +90,12 @@ return
 If WinActive("ahk_group " . Vim.GroupName) and (Vim.State.Mode == "Vim_Normal")
 +j::
 Send, {Down}{Down}{Down}{Down}{Down}
-Sleep,100
+Sleep, 50
 return
 
 
 If WinActive("ahk_group " . Vim.GroupName) and (Vim.State.Mode == "Vim_Normal")
 +k::
 Send, {Up}{Up}{Up}{Up}{Up}
-Sleep, 100
+Sleep, 50
 return

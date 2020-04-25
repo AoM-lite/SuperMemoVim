@@ -188,6 +188,7 @@ return
 Send, +L
 return
 }
+
 ; Edit component order 
 Shift & O::
 GetKeyState, state, Ctrl

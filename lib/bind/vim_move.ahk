@@ -7,10 +7,6 @@ h::Vim.Move.Repeat("h")
 j::Vim.Move.Repeat("j")
 k::Vim.Move.Repeat("k")
 l::Vim.Move.Repeat("l")
-^h::Vim.Move.Repeat("h")
-; ^j::Vim.Move.Repeat("j") ; Clashes with SuperMemo's changing intervals
-^k::Vim.Move.Repeat("k")
-^l::Vim.Move.Repeat("l")
 
 ; Home/End
 0::Vim.Move.Move("0")
@@ -19,7 +15,6 @@ $::Vim.Move.Move("$")
 
 ; Words
 w::Vim.Move.Repeat("w")
-; e::Vim.Move.Repeat("w")
 b::Vim.Move.Repeat("b")
 
 ; Page Up/Down
