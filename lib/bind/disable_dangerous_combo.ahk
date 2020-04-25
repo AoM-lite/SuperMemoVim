@@ -7,7 +7,7 @@
 ^F12:: ; Repair collection
 !Backspace:: ; Undo text editing (same as Ctrl+Z)
 !F4:: ; Close the program
-MsgBox It does not work because it is disabled by supermemovim.
+MsgBox Shortcut disabled by supermemovim.
 return
 
 

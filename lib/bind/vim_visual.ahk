@@ -20,14 +20,25 @@ y::
     Send, {Left}
   }
   ClipWait, 1
-  if(Vim.State.StrIsInCurrentVimMode( "Line")){
+  if(Vim.State.StrIsInCurrentVimMode("Line")){
     Vim.State.SetMode("Vim_Normal", 0, 0, 1)
   }else{
     Vim.State.SetMode("Vim_Normal", 0, 0, 0)
   }
 Return
 
-d::
+; d::
+;   Clipboard :=
+;   Send, ^x
+;   ClipWait, 1
+;   if(Vim.State.StrIsInCurrentVimMode("Line")){
+;     Vim.State.SetMode("Vim_Normal", 0, 0, 1)
+;   }else{
+;     Vim.State.SetMode("Vim_Normal", 0, 0, 0)
+;   }
+; Return
+
+x::
   Clipboard :=
   Send, ^x
   ClipWait, 1
@@ -38,22 +49,11 @@ d::
   }
 Return
 
-x::
-  Clipboard :=
-  Send, ^x
-  ClipWait, 1
-  if(Vim.State.StrIsInCurrentVimMode( "Line")){
-    Vim.State.SetMode("Vim_Normal", 0, 0, 1)
-  }else{
-    Vim.State.SetMode("Vim_Normal", 0, 0, 0)
-  }
-Return
-
 c::
   Clipboard :=
   Send, ^x
   ClipWait, 1
-  if(Vim.State.StrIsInCurrentVimMode( "Line")){
+  if(Vim.State.StrIsInCurrentVimMode("Line")){
     Vim.State.SetMode("Insert", 0, 0, 1)
   }else{
     Vim.State.SetMode("Insert", 0, 0, 0)
