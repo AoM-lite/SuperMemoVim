@@ -13,6 +13,8 @@ This is a fork from the original [vim_ahk](https://github.com/rcmdnk/vim_ahk/rel
 Download the zip; unzip it and open vim.ahk to use. Make sure you've installed [AutoHotKey](https://www.autohotkey.com/) first.
 I create a `supermemovim.ahk` shortcut and put it into the Windows Startup folder for convenience.
 
+_The following are all from the original README._
+
 ## Other Options
 
 | Option                 | Description                                                                                                                                                                            | Default |
