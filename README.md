@@ -33,21 +33,6 @@ You can also use vim.exe, which can work standalone w/o AutoHotKey.
 To get executable, go to [the releases page](https://github.com/rcmdnk/vim_ahk/releases)
 and download the latest one.
 
-## Applications
-The default setting enables vim-mode for the following applications:
-
-* Notepad (メモ帳)
-* Wordpad
-* TeraPad
-* Windows Explorer
-* Thunderbird (only sending window)
-* Microsoft PowerPoint
-* Microsoft Word
-* Evernote
-* Visual Studio Code
-* OneNote
-* TexWork
-* TexStudio
 
 You can change them from the right click menu of task tray icon (find `VimMenu`-`Settings` in the list),
 or launch the setting window by `Ctrl-Alt-Shift-v`.
@@ -252,16 +237,3 @@ y/d/c+Move Command can be used, too.
 |w + q| Save and Quit |
 |q | Quit |
 |h | Open help of the application|
-
-## References (Japanese)
-
-* [vim_ahkでウィンドウを定期的にチェックしてトレイアイコンを変えられる様にした](https://rcmdnk.com/blog/2017/11/22/computer-autohotkey-vim/)
-* [vim_ahkで有効にするアプリの変更もメニューから出来る様にした](https://rcmdnk.com/blog/2017/11/14/computer-windows-autohotkey/)
-* [vim_ahkでメニューから設定変更出来る様にした](https://rcmdnk.com/blog/2017/11/11/computer-windows-autohotkey/)
-* [AutoHotkeyでToolTipを出す](https://rcmdnk.com/blog/2017/11/10/computer-windows-autohotkey/)
-* [AutoHotkeyで設定ファイルの読み書きをする](https://rcmdnk.com/blog/2017/11/08/computer-windows-autohotkey/)
-* [AutoHotkeyでのGUI操作](https://rcmdnk.com/blog/2017/11/07/computer-windows-autohotkey/)
-* [AutoHotkeyでのメニューの追加](https://rcmdnk.com/blog/2017/11/06/computer-windows-autohotkey/)
-* [AutoHotkeyで短い連続入力を認識させる方法](https://rcmdnk.com/blog/2017/11/05/computer-windows-autohotkey/)
-* [AutoHotkeyで特定の条件下で設定したキー以外全てを無効にする簡単な方法](https://rcmdnk.com/blog/2017/09/03/computer-windows-autohotkey/)
-* [Vim以外でVimする: Windows+AutoHotkey編](https://rcmdnk.com/blog/2013/08/03/computer-windows-autohotkey/)
