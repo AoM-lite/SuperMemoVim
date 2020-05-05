@@ -179,8 +179,11 @@ class VimAhk{
   }
 
   SetDefaultActiveWindows(){
-    DefaultList := ["ahk_exe sm17.exe"  ; Version 17
-                  , "ahk_exe sm18.exe"]  ; Version 18
+    DefaultList := ["ahk_exe sm15.exe"  ; Version 15
+	              , "ahk_exe sm16.exe"  ; Version 16
+				  , "ahk_exe sm17.exe"  ; Version 17
+                  , "ahk_exe sm18.exe"] ; Version 18
+				  
 
 
     DefaultGroup := ""

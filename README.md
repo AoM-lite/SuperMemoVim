@@ -1,10 +1,8 @@
 # SuperMemoVim: Learning at the Speed of Editing By Editing at the Speed of Thought
 
-## WORK IN PROGRESS PLEASE DON'T USE YET
-
 ![logo](https://raw.githubusercontent.com/MasterHowToLearn/SuperMemoVim/master/images/supermemovim.png "logo")
 
-vim emulation for vim-like controls in SuperMemo.
+vim emulation for vim-like controls in SuperMemo. For accompaning article please see [SuperMemoVim: Learning at the Speed of Editing By Editing at the Speed of Thought](https://www.masterhowtolearn.com/2020-05-05-supermemovim-learning-at-the-speed-of-editing-by-editing-at-the-speed-of-thought/)
 
 This is a fork from the original [vim_ahk](https://github.com/rcmdnk/vim_ahk/releases). All credits go to the original developer. For details please visit the original repo.
 
