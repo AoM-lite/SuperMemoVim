@@ -1,3 +1,12 @@
+; Focus on Learn Button
+#If WinActive("ahk_group " . Vim.GroupName)
+Tab::
+WinActivate ahk_class TElWind
+WinWaitActive ahk_class TElWind
+ControlFocus, TBitBtn3
+return
+
+
 ; Back to Normal Mode after extracting
 #If WinActive("ahk_group " . Vim.GroupName) and (Vim.State.StrIsInCurrentVimMode("Visual"))
 !x::
@@ -17,6 +26,7 @@ Return
 ; Remove previous word
 #If WinActive("ahk_group " . Vim.GroupName) and (Vim.State.StrIsInCurrentVimMode("Insert"))
 ^w::
+WinWaitActive ahk_class TElWind
 Send, ^{BS}
 Return
 
@@ -25,6 +35,7 @@ Return
 ; for deleting the next word while in Insert Mode
 #If WinActive("ahk_group " . Vim.GroupName) and (Vim.State.StrIsInCurrentVimMode("Insert"))
 ^e::
+WinWaitActive ahk_class TElWind
 Send, ^{Del}
 return
 
